@@ -1,0 +1,103 @@
+* {
+margin:0; padding:0;
+}
+body {
+background-color: #e6e6e6; width: 1680px; height: 2000px;
+}
+section {
+width: 895px;
+margin: 40px 395px;
+}
+nav {
+background: #ffffff;
+    width: 290px;
+    height: 323px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+border-bottom: 1px solid #eae9e9;
+float: left;
+font: 18px Verdana;  color: #a9b2b3;
+text-decoration: none;
+width: 290px;
+height: 50px;
+}
+nav ul li:last-child {
+border-bottom: none;
+}
+article { float: left;  background: #ffffff; width: 580px; height: 200px; margin: 0 0 0 20px;
+}
+.post-image {
+height: 260px; width: 577px;
+}
+article h2 {
+font: 18px Verdana; color: #97a3a3;
+padding: 25px;
+}
+article p {
+font: 14px Verdana; color: #a9b2b3;
+padding-left: 25px;
+padding-right: 25px;
+}
+footer {
+padding: 10px;
+height: 50px;
+background: #f5f5f5;
+}
+footer span {
+font: 14px Verdana; color: #a9b2b3;
+padding: 20px;
+}
+aside {
+background: #ffffff;
+width: 290px;
+
+margin: 35px 0;
+}
+.side-info {
+padding: 25px;
+}
+.side-info h3 {
+font: 16px Verdana; color: #97a3a3;
+}
+.side-info p {
+font: 14px Verdana; color: #a9b2b3;
+}
+.comments {
+float: left;
+margin: 78px 0 0 315px;
+background: #ffffff;
+height: 100px;
+}
+.comments h2 {
+    font: 18px Verdana; color: #97a3a3;
+}
+.comments p {
+    font: 14px Verdana;
+    color: #a9b2b3;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.date {
+font: 14px Verdana;
+color: #a9b2b3;
+float: right;
+padding: 15px;
+}
+.button {
+background: #9ab26b;
+color: #ffffff;
+font: 18px Verdana;
+height: 37px;
+}
+.add-comment {
+background: #ffffff;
+float: left;
+margin: 20px 0 0 315px;
+height: 410px;
+width: 577px;
+font: 14px Verdana;
+color: #a9b2b3;
+}
