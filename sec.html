@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+</head>
+<body>
+<div id="comments">
+    <div id="comments-items"></div>
+    <form><input type="button" id="msg" type="text"/><input type="text" id="textfield"></form>
+    <script>
+        $("#comments").on("click",function(){
+            var ert= $("#textfield").val();
+          $("#comments-items").text(ert);
+        });
+    </script>
+</div>
+
+
+</body>
+</html>
