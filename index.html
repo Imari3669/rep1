@@ -4,62 +4,134 @@
 <title>HTML5 Skeleton</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
-<body>
-<section>
-<header>
-<ul>
-<li><a href="#">News</a></li>
-<li><a href="#">Disney</a></li>
-<li><a href="#">Cartoons</a></li>
-    </ul>
-</header>
+<body class="row">
 
 <nav>
-<ul>
-<li><img src=""/><a href="#">Latest articles</a></li>
-<li><img src=""/><a href="#">Popular Comments</a></li>
-<li><img src=""/><a href="#">Latest Events</a></li>
-<li><img src=""/><a href="#">HTML 5</a></li>
-<li><img src=""/><a href="#">Android Apps</a></li>
-<li><img src=""/><a href="#">Website Usage</a></li>
-<li><img src=""/><a href="#">Email address</a></li>
-</ul>
+
+  <ul class="breadcrumb">
+            <img class="glyphicon-search">
+            <li role="presentation"><a href="#">News</a></li>
+            <li><a href="#">Disney</a></li>
+            <li><a href="#">Cartoons</a></li>
+        </ul>
 </nav>
 
+<div class="col-md-1 .col-md-offset-2"></div>
+
+<aside class="col-md-2">
+    <nav>
+        <ul class="nav list-group">
+            <li class="list-group-item"><img class=""><a href="#" class="text-left">Latest articles</a></li>
+            <li class="list-group-item"><img class=""><a href="#" class="text-left">Popular Comments</a></li>
+            <li class="list-group-item"><img class=""><a href="#" class="text-left">Latest Events</a></li>
+            <li class="list-group-item"><img class=""/><a href="#" class="text-left">HTML 5</a></li>
+            <li class="list-group-item"><img src=""/><a href="#" class="text-left">Android Apps</a></li>
+            <li class="list-group-item"><img src=""/><a href="#" class="text-left">Website Usage</a></li>
+            <li class="list-group-item"><img src=""/><a href="#" class="text-left">Email address</a></li>
+        </ul>
+    </nav>
+
+    <div class="side-info">
+        <img src=>
+        <strong>Animated musical</strong>
+        <p>This is Photoshop's<br>version of Lorem</p>
+        <hr>
+    </div>
+
+    <div class="side-info">
+        <img class="img-responsive" src="img/side1.jpg">
+        <strong>Animated musical</strong>
+        <p>This is Photoshop's<br>version of Lorem</p>
+        <hr>
+    </div>
+
+    <div class="side-info">
+        <img class="img-responsive" src="img/side2.jpg">
+        <strong>Animated musical</strong>
+        <p>This is Photoshop's<br>version of Lorem</p>
+        <hr>
+    </div>
+
+    <div class="side-info">
+        <img class="img-responsive" src="img/side3.jpg">
+        <strong>Animated musical</strong>
+        <p>This is Photoshop's<br>version of Lorem</p>
+        <button type="submit" class="btn">Load more</button>
+    </div>
+
+    <form role="form">
+        <strong>Search</strong>
+        <br>
+        <div class="col-xs-4">
+            <input type="search" class="form-control" placeholder="Search.."/><button class="glyphicon-search"></button>
+            <br>
+            <select name="categories" class="form-control">
+                <option value="">Select Category</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <button type="submit" class="btn" value="Comment">Comment</button>
+        </div>
+    </form>
+
+
+<br>
+    <div class="col-xs-4">
+        <img src=""/>
+        <br>
+        <strong>Admin login</strong>
+        <br>
+        <input type="password" class="form-control">
+        <br>
+        <button type="submit" class="btn">Submit</button>
+    </div>
+</aside>
+
+<div class="col-md-1"></div>
+
+<section class="col-md-6">
+
+
 <article>
-<img clsss="post-image" src=""/>
-<h2>Animated musical adventure-comedy film</h2>
-<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-loremquis bibendum auctor, nisi elorem quis bibendum auctor, nisi elorem quis bibendum auctor, nisi elit consequat ipsum,
-nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate?
+<img clsss="image-responsive" src="img/post1.jpg"/>
+<br>
+<strong>Animated musical adventure-comedy film</strong>
+<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor<br>aliquet. Aenean sollicitudin,
+lorem quis bibendum auctor, nisi elit consequat ipsum,<br> nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulutate cursus a sit amet<br>
+    mauris. Morbi accumsan ipsum velit.
 </p>
 <footer>
-<span class="foot-comment"><img src=""/>12 Comment</span>
-<span class="foot-tweet"><img src=""/>500 Tweets</span>
-<span class="foot-like"><img src=""/>30</span>
+<span class="foot-comment"><img src="img/comment-sign.jpg"/>12 Comment</span>
+<span class="foot-tweet"><img src="img/twit.jpg"/>500 Tweets</span>
+<span class="foot-like"><img src="img/like.jpg"/>30</span>
 </footer>
-</article>
+    </article>
 
-<div class="comments">
+ <div class="comments">
 <div class="date">
 <data value="">05/03/2013</data>
 <span>Reply</span>
 </div>
 <br>
-<h2>GIMMY</h2>
-<p>Lorem Ipsum is simply dummy the printing and typesetting worlв Lorem Ipsum has been</p>
+     <img class="img-responsive" src="img/comment1.jpg">
+     <strong>GIMMY</strong>
+<p>Lorem Ipsum is simply dummy the printing and typesetting world Lorem Ipsum has been</p>
 </div>
 
-<div class="comments">
+<div class="reply">
 <div class="date">
 <data value="">05/03/2013</data>
 <span>Reply</span>
 </div>
 <br>
-<h2>GIMMY</h2>
-<p>Lorem Ipsum is simply dummy the printing and typesetting worlв Lorem Ipsum has been</p>
+    <img class="img-responsive" src="img/comment2.jpg">
+<strong>GIMMY</strong>
+
+<p>Lorem Ipsum is simply dummy the printing and typesetting world Lorem Ipsum has been</p>
 </div>
 
 <div class="comments">
@@ -68,8 +140,9 @@ nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate?
 <span>Reply</span>
 </div>
 <br>
-<h2>GIMMY</h2>
-<p>Lorem Ipsum is simply dummy the printing and typesetting worlв Lorem Ipsum has been</p>
+    <img class="img-responsive" src="img/reply1.jpg">
+    <strong>GIMMY</strong>
+<p>Lorem Ipsum is simply dummy the printing and typesetting world Lorem Ipsum has been</p>
 </div>
 
 <div class="comments">
@@ -78,74 +151,36 @@ nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate?
 <span>Reply</span>
 </div>
  <br>
-<h2>GIMMY</h2>
-<p>Lorem Ipsum is simply dummy the printing and typesetting worlв Lorem Ipsum has been</p>
+    <img class="img-responsive" src="img/reply1.jpg">
+<strong>GIMMY</strong>
+<p>Lorem Ipsum is simply dummy the printing and typesetting world Lorem Ipsum has been</p>
 </div>
 
-<div class="add-comment">
-<h2>New Comment</h2>
+<form role="form">
+<strong>New Comment</strong>
 <br>
-<input type="text" name="name" value="Your name"/>
+    <div class="col-xs-7">
+<input type="text" class="form-control" placeholder="Your name" id="name-comm"/>
 <br>
-<input type="email" name="email" value="email address">
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email address" id="email-comm">
 <br>
-<textarea name="message"></textarea>
+<textarea type="text" class="form-control" placeholder="Comments" id="text-comm"></textarea>
 <br>
-<input type="button" class="button" value="Comments">
+<button type="submit" class="btn" value="Comment" id="btn-comm">Comment</button>
 </div>
-
-<aside>
-<div class="side-info">
-<img src="">
-<h3>Animated musical</h3>
-<p>This is Photoshop's<br>version of Lorem</p>
-<hr>
-</div>
-
-<div class="side-info">
-<img src="">
-<h3>Animated musical</h3>
-<p>This is Photoshop's<br>version of Lorem</p>
-<hr>
-</div>
-
-<div class="side-info">
-<img src="">
-<h3>Animated musical</h3>
-<p>This is Photoshop's<br>version of Lorem</p>
-<hr>
-</div>
-
-<div class="side-info">
-<img src="">
-<h3>Animated musical</h3>
-<p>This is Photoshop's<br>version of Lorem</p>
-</div>
-<input type="button" class="button" value="Load more">
-</aside>
-
-<div class="search">
-<h2>Search</h2>
-<input type="search">
-<br>
-<select name="categories">
-<option value="">Select Category</option>
-<option value=""></option>
-<option value=""></option>
-</select>
-<br>
-<input type="button" class="button" value="Search">
-</div>
-
-<div class="admin-login">
-<img src=""/>
-<br>
-<h1>Admin Login</h1>
-<br>
-<input type="password">
-<br>
-<input type="button" class="button" value="Submit">
-</div>
+    </form>
 </section>
+
+<script>
+    $("#btn-comm").on("click",function(){
+       var name=$("#name-comm").val();
+        var email=$("#email-comm").val();
+        var text=$("#text-comm").val();
+            $(".comments").text(name,email,text);
+
+        });
+</script>
+
+<div class="col-md-1 .col-md-offset-2></div>
 </body>
 </html>
