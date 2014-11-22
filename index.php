@@ -194,12 +194,14 @@
 
 
     $a = array($_REQUEST["name"], $_REQUEST["email"], $_REQUEST["comtext"]);
-    for ($a[0]=$name; ; $a++){
-        echo file_put_contents("newcomment.txt", $_REQUEST["$a[0]"]);
-        $imploded= implode(" ", array($a[0]));
+    $writeStr = implode(';', $a);
+//        echo file_put_contents("newcomment.txt", $writeStr);
+    $fo = fopen('newcomments.txt', 'a+');
+    fwrite($fo, $writeStr);
+    fclose($fo);
+        $imploded= implode(" ", $a);
         echo $imploded;
 
-    }
     ?>
 
     /*
