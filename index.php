@@ -153,7 +153,7 @@
             <p>Lorem Ipsum is simply dummy the printing and typesetting world Lorem Ipsum has been</p>
         </div>
 
-        <form role="form" action="index11.php" method="post">
+        <form role="form" action="index.php" method="post">
             <strong>New Comment</strong>
             <br>
             <input type="text" class="form-control" placeholder="Your name" id="name-comm" name="name"/>
@@ -195,16 +195,31 @@
 
     $a = array($_REQUEST["name"], $_REQUEST["email"], $_REQUEST["comtext"]);
     $writeStr = implode(';', $a);
-//        echo file_put_contents("newcomment.txt", $writeStr);
     $fo = fopen('newcomments.txt', 'a+');
     fwrite($fo, $writeStr);
     fclose($fo);
         $imploded= implode(" ", $a);
-        echo $imploded;
+        echo "<strong> $imploded </strong>";
 
+    $readStr = explode(";", $imploded);
+    $file = fopen("newcomments.txt","r");
+    fread($file,filesize("newcomments.txt"));
+    fclose($file);
+    $exploded = explode(" ", $imploded);
+    echo $exploded;
     ?>
 
-    /*
-    //$exploded = explode(",",$imploded);
-    //print_r($exploded);
-    */
+
+<?php
+
+$db_connect = mysql_real_connect('127.0.0.1', 'root', '1234');
+if($db_connect !==false){
+    mysql_select_db('database1', $db_connect);
+    $query = mysql_query('SELECT * FROM users', $db_connect);
+    if ($query!==false) {
+        while ($row = mysql_fetch_assoc($query)) {
+            echo $row['id'];
+        }
+    }
+}
+
