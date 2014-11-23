@@ -212,7 +212,7 @@
 
 <?php
 
-$db_connect = mysqli_connect('127.0.0.1', 'root', '1234', 'database1');
+$db_connect = mysql_real_connect('127.0.0.1', 'root', '1234');
 if($db_connect !==false){
     mysql_select_db('database1', $db_connect);
     $query = mysql_query('SELECT * FROM users', $db_connect);
