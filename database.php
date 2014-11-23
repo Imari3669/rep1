@@ -10,3 +10,35 @@ if($db_connect !==false){
        }
     }
 }
+
+<div id="show-ajax"></div>
+<script>
+jQuery('#delete').on('click', function (){
+    jQuery.post('/', {}, function (data) {
+        jQuery('#show-ajax').html (data);
+    };
+    };
+</script>
+
+
+
+<input type = "button" value="Click me" id= "click-me"/>
+<div id="show-ajax"></div>
+<script>
+jQuery('#click-me').on('click', function (){
+    jQuery.post('/', {}, function (data) {
+        jQuery('#show-ajax').html (data);
+    });
+    });
+</script>
+
+
+<input type = "button" value="Click me" id= "click-me"/>
+<div id="show-ajax"></div>
+<script>
+jQuery('#click-me').on('click', function (){
+    jQuery.post('/', {}, function (data) {
+        jQuery('#show-ajax').html (data);
+    });
+    });
+</script>
